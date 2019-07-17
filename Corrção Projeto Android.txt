@@ -1,0 +1,4 @@
+  <PropertyGroup>
+    <UseShortFileNames>True</UseShortFileNames>
+    <IntermediateOutputPath>D:\0</IntermediateOutputPath>
+  </PropertyGroup>

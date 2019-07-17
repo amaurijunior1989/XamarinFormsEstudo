@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App02_TipoPaginaXF.Android", "App02_TipoPaginaXF\App02_TipoPaginaXF.Android\App02_TipoPaginaXF.Android.csproj", "{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App02_TipoPaginaXF", "App02_TipoPaginaXF\App02_TipoPaginaXF\App02_TipoPaginaXF.csproj", "{FDFF6FE4-697E-4A4B-BC8D-C13BA7BBBE77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACD6F96-CF57-4C98-8620-900EE7C4CC7A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FDFF6FE4-697E-4A4B-BC8D-C13BA7BBBE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFF6FE4-697E-4A4B-BC8D-C13BA7BBBE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFF6FE4-697E-4A4B-BC8D-C13BA7BBBE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFF6FE4-697E-4A4B-BC8D-C13BA7BBBE77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {361AD479-6487-4F57-AD6B-2CCF4C331765}
+	EndGlobalSection
+EndGlobal

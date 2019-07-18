@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App03_LayoutXF.MainPage">
+
+    <StackLayout>
+        <Button x:Name="btnStack" Text="Stack" Clicked="BtnStack_Clicked"/>
+        <Button x:Name="btnGrid" Text="Grid" Clicked="BtnGrid_Clicked"/>
+        <Button x:Name="btnAbsolute" Text="Absolute" Clicked="BtnAbsolute_Clicked"/>
+        <Button x:Name="btnRelative" Text="Relative" Clicked="BtnRelative_Clicked"/>
+        <Button x:Name="btnScroll" Text="Scroll" Clicked="BtnScroll_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

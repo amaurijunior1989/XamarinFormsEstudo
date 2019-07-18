@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App02_Xamarin.Pages.Perfil01">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="0">
+            <RelativeLayout VerticalOptions="Start" HeightRequest="300">
+                <Image  Source="fundo.png" 
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"                        
+                       />
+
+                <Image Source="perfil.png"       
+                       x:Name="imgPerfil"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-60}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"
+                       WidthRequest="120"                       
+                       />
+                
+                <Label Text="Miguel De Icaza" 
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=imgPerfil, Property=X, Factor=1}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=imgPerfil, Property=Y, Factor=1,Constant=180}"
+                       />
+            </RelativeLayout>
+            
+            
+            <Grid BackgroundColor="DarkBlue" HeightRequest="120">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="18" HorizontalTextAlignment="Center"  TextColor="White" FontSize="12"/>
+                    <Label Text="Anos" HorizontalTextAlignment="Center" TextColor="White" FontSize="12"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="0"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="19/01/2000" HorizontalTextAlignment="Center"  TextColor="White" FontSize="12"/>
+                    <Label Text="Nasceu" HorizontalTextAlignment="Center" TextColor="White" FontSize="12"/>
+                </StackLayout>  
+            </Grid>
+            
+            
+            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="30">
+                <Label Text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+                    
+                </Label>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

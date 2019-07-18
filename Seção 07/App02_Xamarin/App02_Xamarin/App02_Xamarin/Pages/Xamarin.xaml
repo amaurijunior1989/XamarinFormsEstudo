@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App02_Xamarin.Pages.Xamarin">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <StackLayout BackgroundColor="Yellow" Padding="30">
+                <Image Source="logo.png" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout HeightRequest="50" BackgroundColor="DarkBlue" Padding="30">
+                <Label Text="XAMARIN"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="White" FontSize="24"
+                       />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="30">
+                <RelativeLayout>
+                    <BoxView 
+                        BackgroundColor="DarkBlue" 
+                        x:Name="quadrado1" 
+                        WidthRequest="30" 
+                        HeightRequest="30"
+                        ></BoxView>
+                    <BoxView 
+                        BackgroundColor="BlueViolet" 
+                        x:Name="quadrado2" WidthRequest="30" 
+                        HeightRequest="30"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=quadrado1, Property=X,Factor=1,Constant=20}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=quadrado1, Property=Y,Factor=1,Constant=20}"
+                        ></BoxView>
+                    <BoxView 
+                        BackgroundColor="LightBlue" 
+                        x:Name="quadrado3" 
+                        WidthRequest="30" 
+                        HeightRequest="30"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=quadrado2, Property=X,Factor=1,Constant=20}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=quadrado2, Property=Y,Factor=1,Constant=20}"                        ></BoxView>
+                </RelativeLayout>
+                <Label Text="Empresa"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black" FontSize="24" />
+            </StackLayout>
+            <StackLayout Padding="30">
+                <Label Text="Empresa comprada pela microsoft."/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

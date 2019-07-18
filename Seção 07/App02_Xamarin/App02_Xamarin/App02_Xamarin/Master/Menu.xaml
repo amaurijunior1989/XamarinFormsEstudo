@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pagina="clr-namespace:App02_Xamarin.Pages"
+             x:Class="App02_Xamarin.Master.Menu">
+    
+    <MasterDetailPage.Master>
+        <!-- Menu-->
+        <ContentPage Title="Menu" BackgroundColor="MidnightBlue">
+        <StackLayout>
+                <StackLayout Padding="30" BackgroundColor="Yellow">
+                    <Image                         
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"
+                        Source="logo.png"/>
+                </StackLayout>
+                <StackLayout Spacing="20">
+                    <Button Text="Miguel" x:Name="btnMiguel" FontSize="24" TextColor="White" Clicked="BtnMiguel_Clicked" BackgroundColor="Transparent" />
+                    <Button Text="Joseph" FontSize="24" TextColor="White" BackgroundColor="Transparent"/>
+                    <Button Text="Nat" FontSize="24" TextColor="White" BackgroundColor="Transparent"/>
+                    <Button Text="Sobre Xamarin"  FontSize="24" TextColor="White" x:Name="btnSobreXamarin" Clicked="BtnSobreXamarin_Clicked" BackgroundColor="Transparent"/>
+                </StackLayout>
+            </StackLayout>
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <!-- Paginas-->
+        <NavigationPage>
+            <x:Arguments>
+                <pagina:Perfil01 />
+            </x:Arguments>
+        </NavigationPage>        
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

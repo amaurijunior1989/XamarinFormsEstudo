@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_ControlXF.Controles.ProgressBarPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ProgressBar x:Name="objProgressBar1" Progress=".5" ProgressColor="Red" />
+            <ProgressBar x:Name="objProgressBar2" Progress=".2" ProgressColor="Yellow" />
+            <ProgressBar x:Name="objProgressBar3" Progress=".7" ProgressColor="AliceBlue" />
+
+            <Button x:Name="btnModificarBarras" Clicked="BtnModificarBarras_Clicked" Text="Carregar Barras"></Button>
+            <Button x:Name="btnResetarBarras" Clicked="BtnResetarBarras_Clicked" Text="Zerar Barras"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

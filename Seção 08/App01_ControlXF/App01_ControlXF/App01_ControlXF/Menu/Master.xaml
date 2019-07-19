@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+                  xmlns:page="clr-namespace:App01_ControlXF"
+             x:Class="App01_ControlXF.Menu.Master">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="Activity Indicator" x:Name="btnActivyIndicator" Clicked="BtnActivyIndicator_Clicked" />
+                <Button Text="Progress Bar" x:Name="btnProgressBar" Clicked="BtnProgressBar_Clicked"/>
+                <Button Text="Box View" x:Name="btnBoxView" Clicked="BtnBoxView_Clicked"/>
+                <Button Text="Label" x:Name="btnLabel" Clicked="BtnLabel_Clicked"/>
+                <Button Text="Button" x:Name="btnButton" Clicked="BtnButton_Clicked"/>
+                <Button Text="Entry/Editor" x:Name="btnEntryEditor" Clicked="BtnEntryEditor_Clicked"/>
+                <Button Text="Date Picker" x:Name="btnDatePicker" Clicked="BtnDatePicker_Clicked"/>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <!-- Dealhes -->
+        <page:MainPage>
+            
+        </page:MainPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

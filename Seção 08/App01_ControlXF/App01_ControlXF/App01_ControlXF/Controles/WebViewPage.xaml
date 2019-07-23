@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_ControlXF.Controles.WebViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="EnderecoSite" HorizontalOptions="FillAndExpand"></Entry>
+                <Button Text="OK" Clicked="Button_Clicked"/>
+                <Button Text="Proximo" x:Name="btnProximo" Clicked="BtnProximo_Clicked"/>
+                <Button Text="Voltar" x:Name="btnVoltar" Clicked="BtnVoltar_Clicked"/>
+
+            </StackLayout>
+            <WebView x:Name="objView"
+                Source="http://www.google.com.br"
+                Navigating="ObjView_Navigating" 
+                Navigated="ObjView_Navigated"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand">
+                <!--
+                    HTML - Conteúdo, Texto, Imagem, Vídeo.
+                    CSS - Estilo, Aparência.
+                    Javascript - Lógica, Validações.
+                -->
+                
+            </WebView>
+            <Label x:Name="lbStatus" Text="Status"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

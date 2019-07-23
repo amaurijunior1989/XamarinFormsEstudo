@@ -6,24 +6,36 @@
              mc:Ignorable="d"
                   xmlns:page="clr-namespace:App01_ControlXF"
              x:Class="App01_ControlXF.Menu.Master">
-    <MasterDetailPage.Master>
+    <MasterDetailPage.Master>        
         <ContentPage Title="Menu">
-            <StackLayout>
-                <Button Text="Activity Indicator" x:Name="btnActivyIndicator" Clicked="BtnActivyIndicator_Clicked" />
-                <Button Text="Progress Bar" x:Name="btnProgressBar" Clicked="BtnProgressBar_Clicked"/>
-                <Button Text="Box View" x:Name="btnBoxView" Clicked="BtnBoxView_Clicked"/>
-                <Button Text="Label" x:Name="btnLabel" Clicked="BtnLabel_Clicked"/>
-                <Button Text="Button" x:Name="btnButton" Clicked="BtnButton_Clicked"/>
-                <Button Text="Entry/Editor" x:Name="btnEntryEditor" Clicked="BtnEntryEditor_Clicked"/>
-                <Button Text="Date Picker" x:Name="btnDatePicker" Clicked="BtnDatePicker_Clicked"/>
-
-            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Button Text="Activity Indicator" x:Name="btnActivyIndicator" Clicked="BtnActivyIndicator_Clicked" />
+                    <Button Text="Progress Bar" x:Name="btnProgressBar" Clicked="BtnProgressBar_Clicked"/>
+                    <Button Text="Box View" x:Name="btnBoxView" Clicked="BtnBoxView_Clicked"/>
+                    <Button Text="Label" x:Name="btnLabel" Clicked="BtnLabel_Clicked"/>
+                    <Button Text="Button" x:Name="btnButton" Clicked="BtnButton_Clicked"/>
+                    <Button Text="Entry/Editor" x:Name="btnEntryEditor" Clicked="BtnEntryEditor_Clicked"/>
+                    <Button Text="Date Picker" x:Name="btnDatePicker" Clicked="BtnDatePicker_Clicked"/>
+                    <Button Text="Time Picker" x:Name="btnTimePicker" Clicked="BtnTimePicker_Clicked"/>
+                    <Button Text="Picker" x:Name="btnPicker" Clicked="BtnPicker_Clicked"/>
+                    <Button Text="Search Bar" x:Name="btnSearchBar" Clicked="BtnSearchBar_Clicked"/>
+                    <Button Text="Slider/Step" x:Name="btnSliderStep" Clicked="BtnSliderStep_Clicked"/>
+                    <Button Text="Switch" x:Name="btnSwitch" Clicked="BtnSwitch_Clicked"/>
+                    <Button Text="Image" x:Name="btnImage" Clicked ="BtnImage_Clicked" />
+                    <Button Text="List View" x:Name="btnListView" Clicked="BtnListView_Clicked"/>
+                    <Button Text="Table View" x:Name="btnTableView" Clicked="BtnTableView_Clicked"/>
+                    <Button Text="Web View" x:Name="btnWebView" Clicked="BtnWebView_Clicked"/>
+                 </StackLayout>
+            </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <!-- Dealhes -->
-        <page:MainPage>
-            
-        </page:MainPage>
+        <NavigationPage>
+            <x:Arguments>
+                <page:MainPage/>
+            </x:Arguments>
+        </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

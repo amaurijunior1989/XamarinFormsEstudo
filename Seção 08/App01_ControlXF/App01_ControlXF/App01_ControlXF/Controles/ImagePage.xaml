@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_ControlXF.Controles.ImagePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="Container">
+            <!-- Source : Resource,Local,Internet -->
+            <Image x:Name="objImageInternet"
+                   Source="https://blog.mailrelay.com/wp-content/uploads/2017/05/logo-mercedes.jpg"   
+                   Aspect="Fill"
+                   IsOpaque="True"       
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

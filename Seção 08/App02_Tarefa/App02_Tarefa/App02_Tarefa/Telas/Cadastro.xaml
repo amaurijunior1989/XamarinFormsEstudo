@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App02_Tarefa.Telas.Cadastro">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Nome" FontAttributes="Bold"/>
+            <Entry x:Name="txtNome" />
+            <Label Text="Prioridades" FontAttributes="Bold"/>
+            <StackLayout x:Name="slPrioridades" Spacing="10" Padding="10">
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image Source="p4.png"/>
+                    <Label HorizontalOptions="FillAndExpand" Text="Urgente e Importante" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="10" >
+                    <Image Source="p3.png"/>
+                    <Label HorizontalOptions="FillAndExpand" Text="Urgente e Não Importante" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="10" >
+                    <Image Source="p2.png"/>
+                    <Label HorizontalOptions="FillAndExpand" Text="Não Urgente e Importante" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="10" >
+                    <Image Source="p1.png"/>
+                    <Label HorizontalOptions="FillAndExpand" Text="Não Urgente e Não Importante" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </StackLayout>
+            <Button x:Name="btnSalvar" Text="OK" HorizontalOptions="End" BackgroundColor="Blue" TextColor="White" Clicked="BtnSalvar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

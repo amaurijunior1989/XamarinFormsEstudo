@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_Cell.Pagina.ListViewPage">
+    <ContentPage.Content>
+        <ListView x:Name="ListaFuncionario" ItemSelected="ListaFuncionario_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" Detail="{Binding Cargo}" >
+                        <TextCell.ContextActions>
+                            <MenuItem x:Name="menuFerias" Text="Férias" Clicked="MenuFerias_Clicked" CommandParameter="{Binding .}"></MenuItem>
+                            <MenuItem x:Name="menuAbono" Text="Abono" Clicked="MenuAbono_Clicked" CommandParameter="{Binding .}"></MenuItem>
+                            <MenuItem x:Name="menuDemitir" Text="Demitir" Clicked="MenuDemitir_Clicked" CommandParameter="{Binding .}"></MenuItem>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

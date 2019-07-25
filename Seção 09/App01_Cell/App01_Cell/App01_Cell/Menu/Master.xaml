@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:page="clr-namespace:App01_Cell.Pagina"
+             x:Class="App01_Cell.Menu.Master"
+                  NavigationPage.HasNavigationBar="False">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Celulas"/>
+                    <Button x:Name="btnTextCell" Text="Text Cell" Clicked="BtnTextCell_Clicked"/>
+                        <Button x:Name="btnImageCell" Text="Image Cell" Clicked="BtnImageCell_Clicked"/>
+                        <Button x:Name="btnEntryCell" Text="Entry Cell" Clicked="BtnEntryCell_Clicked"/>
+                       <Button x:Name="btnSwitchCell" Text="Switch Cell" Clicked="BtnSwitchCell_Clicked"/>
+                    <Button x:Name="btnViewCell" Text="View Cell" Clicked="BtnViewCell_Clicked"/>
+
+                    <Label Text="Componentes"/>
+                    <Button x:Name="btnListView" Text="List View" Clicked="BtnListView_Clicked"/>
+                    <Button x:Name="btnListViewButon" Text="List View  Button" Clicked="BtnListViewButon_Clicked"/>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:TextCellPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

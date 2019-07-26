@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+                  xmlns:page="clr-namespace:App01_Estilo"
+             x:Class="App01_Estilo.Menu.Master"
+                  NavigationPage.HasNavigationBar="False">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button x:Name="btnImplicitStylePage" Text="Implicit Style Page" Clicked="BtnImplicitStylePage_Clicked"/>
+                <Button x:Name="btnExplicitStylePage" Text="Explicit Style Page" Clicked="BtnExplicitStylePage_Clicked"/>
+                <Button x:Name="btnGlobalStylePage" Text="Global Style Page" Clicked="BtnGlobalStylePage_Clicked"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:MainPage/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

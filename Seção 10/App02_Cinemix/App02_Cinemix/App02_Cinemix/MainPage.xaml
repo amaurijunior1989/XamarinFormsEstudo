@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App02_Cinemix.MainPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Style="{StaticResource Cabecalho}">
+                    <Label Text="CINEMIX" Style="{StaticResource TituloApp}" />
+                    <Label Text="Seu APP de Cinema" Style="{StaticResource SubTituloApp}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource Conteudo}">
+                    <Label Text="Lancamento" Style="{StaticResource Lancamento}"/>
+                    <Label Text="Pantera Negra" Style="{StaticResource TituloFilme}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                        
+                            <RowDefinition Height="Auto">
+                            
+                            </RowDefinition>
+                            <RowDefinition Height="Auto">
+                                
+                            </RowDefinition>
+                            <RowDefinition Height="Auto">
+
+                            </RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Source="fundo.png" Aspect="AspectFill" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="FillAndExpand" />
+                        <Image Source="poster.png" Margin="0,15,0,0" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Start"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="Após a morte do rei T'Chaka (John Kani), o príncipe T'Challa (Chadwick Boseman) retorna a Wakanda para a cerimônia de coroação.Nela são reunidas as cinco tribos que compõem o reino, sendo que uma delas, os Jabari, não apoia o atual governo. T'Challa logo recebe o apoio de Okoye (Danai Gurira), a chefe da guarda de Wakanda, da irmã Shuri (Letitia Wright), que coordena a área tecnológica do reino,e também de Nakia (Lupita Nyong'o), a grande paixão do atual Pantera Negra, que não quer se tornar rainha. Juntos, eles estão à procura de Ulysses Klaue (Andy Serkis), que roubou de Wakanda um punhado de vibranium, alguns anos atrás."
+                               HorizontalOptions="Center" Margin="10,-210,10,0" FontSize="12" FontFamily="Segoe UI" TextColor="Gray"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Padding="10,10,10,10" Spacing="20">
+                            <StackLayout  Style="{StaticResource HorarioFilme}">
+                                <Label Text="10:30h" TextColor="White" />
+                            </StackLayout>
+                            <StackLayout  Style="{StaticResource HorarioFilme}">
+                                <Label Text="10:30h" TextColor="White" />
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource HorarioFilme}">
+                                <Label Text="10:30h" TextColor="White" />
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource HorarioFilme}">
+                                <Label Text="10:30h" TextColor="White" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Image Source="FundoValor.png" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" />
+                        <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="0" >
+                            <Label Text="Inteira"/>
+                            <Label Text="Inteira"/>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

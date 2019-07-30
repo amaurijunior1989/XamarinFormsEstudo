@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_Vagas.Pagina.ConsultarVagas">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Vagas" FontSize="24"></Label>
+                <Label Text="encontre seu emprego aqui!" FontSize="12"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal">
+                <Button Text="Add" x:Name="btnCadastrar" Clicked="BtnCadastrar_Clicked"></Button>
+                <Button x:Name="btnMinhasVagas" Text="Minhas Vagas" Clicked="BtnMinhasVagas_Clicked"></Button>
+            </StackLayout>
+            <Entry Placeholder="Pesquisar" TextChanged="Entry_TextChanged"/>
+            <Label x:Name="txtQuantidadeEncontrada"/>
+            <ListView x:Name="listVagas" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10" RowSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Column="0">
+                                    <Label x:Name="lblNomeVaga" Text="{Binding NomeVaga}" FontAttributes="Bold" />
+                                    <Label x:Name="lblEmpresa" Text="{Binding Empresa}"  />
+                                    <Label x:Name="lblCidade" Text="{Binding Cidade}"  />
+                                </StackLayout>
+                                <Label x:Name="lblDetalhe" Text="+Detalhe" Grid.Column="1">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" CommandParameter="{Binding .}"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

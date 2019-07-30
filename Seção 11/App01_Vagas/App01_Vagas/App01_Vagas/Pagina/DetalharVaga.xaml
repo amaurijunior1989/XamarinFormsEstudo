@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_Vagas.Pagina.DetalharVaga">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout IsEnabled="False">
+                <Entry x:Name="txtNomeVaga" Placeholder="Vaga-Cargo" Text="{Binding NomeVaga }"></Entry>
+                <Entry x:Name="txtEmpresa" Placeholder="Empresa" Text="{Binding Empresa}"></Entry>
+                <Entry x:Name="txtQuantidade" Placeholder="Quantidade" Text="{Binding QuantidadeVaga}"></Entry>
+                <Entry x:Name="txtCidade" Placeholder="Cidade" Text="{Binding Cidade}"></Entry>
+                <Entry x:Name="txtSalario" Placeholder="Salario" Text="{Binding Salario}"></Entry>
+                <Editor x:Name="txtDescricaoCargo" Placeholder="Descrição Cargo" Text="{Binding Descricao}"></Editor>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="TipoContracao"></Label>
+                    <Label Text="CLT"></Label>
+                    <Switch x:Name="swtTipoContratacao"></Switch>
+                    <Label Text="PJ"></Label>
+                </StackLayout>
+
+                <Entry x:Name="txtTelefone" Placeholder="Telefone" Text="{Binding Telefone}"/>
+                <Entry x:Name="txtEmail" Placeholder="Email" Text="{Binding Email}"/>                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
